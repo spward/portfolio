@@ -5,9 +5,9 @@ export const Header = () => {
   return (
     <div className="header">
       <div className="nav-container">
-        <div className="logo">
+        <a className="logo" href="/">
           <PersonalLogo />
-        </div>
+        </a>
         <div className="nav-links">
           <Link to="/" className="nav-link">
             Home

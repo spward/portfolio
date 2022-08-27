@@ -1,0 +1,83 @@
+.about {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 350px);
+  justify-content: center;
+  padding-bottom: 3rem;
+  text-align: center;
+  margin: 3rem 0;
+  @include sm-screen {
+    grid-template-columns: repeat(auto-fill, 450px);
+  }
+
+  @include lg-screen {
+    grid-template-columns: repeat(auto-fill, 600px);
+    text-align: left;
+    gap: 6rem;
+  }
+
+  @include lg-screen {
+    grid-template-columns: repeat(auto-fill, 800px);
+    gap: 8rem;
+  }
+  h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin: 1rem 0;
+
+    @include sm-screen {
+      margin: 2rem 0 1rem 0;
+    }
+  }
+
+  //career
+  .career {
+    p {
+      margin: 1rem 0;
+      line-height: 1.5rem;
+    }
+  }
+
+  //skills
+  .skills {
+    &-list {
+      margin-top: 2rem;
+      display: grid;
+      grid-gap: 1.5rem 4rem;
+      grid-template-columns: repeat(auto-fill, 90px);
+      justify-content: center;
+      margin-bottom: 2rem;
+
+      p {
+        color: $gray;
+        border: 1px solid $gray;
+        border-radius: 5px;
+        padding: 0.6rem;
+        font-size: 0.8rem;
+        text-align: center;
+        text-transform: capitalize;
+        &:hover {
+          color: #fff;
+          background-color: $pink-dark;
+          transition: 0.3s;
+          border-color: $pink-dark;
+        }
+      }
+    }
+  }
+
+  //experience
+  .experience {
+    &-container {
+      margin: 1rem 0;
+      h3 {
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+      }
+      h4 {
+        span {
+          color: $gray;
+        }
+      }
+    }
+  }
+}

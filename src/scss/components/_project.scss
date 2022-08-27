@@ -1,0 +1,119 @@
+.project {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 3rem;
+  text-align: center;
+
+  @include lg-screen {
+    width: 80%;
+    text-align: left;
+  }
+  img {
+    width: 100%;
+    margin: 1rem auto 0 auto;
+    display: block;
+  }
+  .tag,
+  .tool {
+    border: 1px solid $orange-dark;
+    border-radius: 5px;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: $orange-dark;
+  }
+
+  .project-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    h2 {
+      font-size: 4rem;
+      font-weight: 700;
+      margin: 1rem 0;
+      text-transform: capitalize;
+    }
+
+    .tag {
+      font-size: 1.1rem;
+    }
+
+    .branding {
+      border: 1px solid $purple-dark;
+      color: $purple-dark;
+    }
+
+    .development {
+      border: 1px solid $green-dark;
+      color: $green-dark;
+    }
+  }
+
+  .project-content {
+    width: 90%;
+    margin: 0 auto;
+
+    .project-links {
+      display: flex;
+      fill: $gray;
+      justify-content: center;
+      margin: 1rem 0;
+      gap: 2rem;
+      @include lg-screen {
+        justify-content: flex-start;
+      }
+      .github:hover {
+        fill: $purple-light;
+      }
+
+      .demo:hover {
+        fill: $pink-dark;
+      }
+
+      .twitter:hover {
+        fill: $purple-dark;
+      }
+
+      .github:hover,
+      .demo:hover,
+      .twitter:hover {
+        transition: fill 0.3s;
+      }
+    }
+    .tools {
+      color: $gray;
+      border-radius: 5px;
+      text-transform: uppercase;
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+
+      @include lg-screen {
+        justify-content: flex-start;
+      }
+      .tool {
+        font-size: 0.7rem;
+        color: $gray;
+        border-color: $gray;
+      }
+    }
+  }
+
+  h3 {
+    margin: 2rem 0 1rem 0;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+
+  p {
+    margin: 0.5rem 0 1rem 0;
+    line-height: 1.6rem;
+  }
+
+  &:last-child {
+    padding-bottom: 3rem;
+  }
+}

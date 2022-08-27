@@ -1,0 +1,60 @@
+.rainbow-border {
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -2;
+    left: -100%;
+    top: -100%;
+    width: 300%;
+    height: 300%;
+    background-color: $green-dark;
+    background-repeat: no-repeat;
+    background-size: 50% 50%, 50% 50%;
+    background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+    background-image: linear-gradient($green-dark, $green-light),
+      linear-gradient($orange-dark, $orange-light),
+      linear-gradient($pink-dark, $pink-light),
+      linear-gradient($purple-dark, $purple-light);
+    animation: rotate 4s linear infinite;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 3px;
+    top: 3px;
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    background: white;
+    border-radius: 5px;
+  }
+}
+
+// Small devices
+@mixin sm-screen {
+  @media (min-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+
+// Medium devices
+@mixin md-screen {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin lg-screen {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+// Extra large devices
+@mixin xl-screen {
+  @media (min-width: #{$screen-xl-min}) {
+    @content;
+  }
+}

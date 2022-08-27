@@ -1,0 +1,92 @@
+.work {
+  display: grid;
+  grid-gap: 5rem;
+  grid-template-columns: repeat(auto-fill, 380px);
+  justify-content: center;
+  align-items: center;
+  margin: 10rem auto 0 auto;
+  width: 70%;
+  padding-bottom: 3rem;
+
+  .card {
+    border-radius: 5px;
+    border: 1px solid $gray;
+    padding: 3rem;
+    position: relative;
+
+    h2 {
+      font-size: 1.75rem;
+      text-align: center;
+      text-transform: capitalize;
+      margin: 1rem 0 2rem 0;
+    }
+
+    &-links {
+      display: flex;
+      justify-content: center;
+      margin: 1rem 0;
+
+      a {
+        margin: 0 1rem;
+
+        svg {
+          fill: $gray;
+        }
+      }
+
+      .github:hover {
+        fill: $purple-light;
+      }
+
+      .demo:hover {
+        fill: $pink-dark;
+      }
+
+      .twitter:hover {
+        fill: $purple-dark;
+      }
+
+      .github:hover,
+      .demo:hover,
+      .twitter:hover {
+        transition: fill 0.3s;
+      }
+    }
+
+    .tools {
+      position: absolute;
+      bottom: 0.75rem;
+      left: 0.75rem;
+      color: $gray;
+      border-radius: 5px;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+
+      .tool {
+        margin-right: 0.7rem;
+      }
+    }
+
+    .tag {
+      position: absolute;
+      bottom: 0.75rem;
+      left: 0.75rem;
+      border: 1px solid $orange-dark;
+      color: $orange-dark;
+      border-radius: 5px;
+      padding: 0.25rem 0.75rem;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+    }
+
+    .branding {
+      border: 1px solid $purple-dark;
+      color: $purple-dark;
+    }
+
+    .development {
+      border: 1px solid $green-dark;
+      color: $green-dark;
+    }
+  }
+}

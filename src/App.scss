@@ -1,0 +1,53 @@
+@import "./scss/abstracts/__abstracts-dir";
+.App {
+  height: 100vh;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  a.icon.github {
+    position: fixed;
+    bottom: 6rem;
+    right: 3rem;
+    z-index: 99;
+    display: none;
+
+    @include sm-screen {
+      display: block;
+    }
+
+    svg {
+      width: 2rem;
+      height: auto;
+      fill: $gray;
+
+      &:hover {
+        fill: $purple-light;
+        transition: 0.3s;
+      }
+    }
+  }
+
+  a.icon.linkedin {
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    z-index: 99;
+    display: none;
+
+    @include sm-screen {
+      display: block;
+    }
+
+    svg {
+      width: 2rem;
+      height: auto;
+      fill: $gray;
+      &:hover {
+        fill: $green-light;
+        transition: 0.3s;
+      }
+    }
+  }
+}

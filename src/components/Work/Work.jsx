@@ -36,7 +36,7 @@ export const Work = () => {
       difficulties:
         "The difficulties that I have ran into on this project since the beginning is learning the blockchain. The concept of holding images directly on the blockchain for people to trade has been hard. I ran into an issue when we released this project that the metadata was incorrect causing the project to have issues at the beginning. I also had to learn how to market, design, and develop everything from generative art pieces to minting services.",
       solution:
-        "The solution was for me to take hours of research to learn that their is a 721 standard to metadata that allowed me fix my metadata and update the blockchain to respond accordingly. I also took my branding experience from University and used them to iconically show off the 13 original characters drawn.",
+        "The solution was for me to take hours of research to learn that there is a 721 standard to metadata that allowed me fix my metadata and update the blockchain to respond accordingly. I also took my branding experience from University and used them to iconically show off the 13 original characters drawn.",
     },
     {
       title: "Idola Industries",
@@ -63,7 +63,7 @@ export const Work = () => {
       difficulties:
         "This is the first time I have wanted to create something that was open sourced and accessible for anyone to use. Part of my difficulties in this was adding all of the features that I feel are necessary to build a project without adding too much 'fluff' and causing the template to feel to clunky to use.",
       solution:
-        "The solution that I taken for this is a solo developer approach. I have added an MIT license so that anyone that feels like their is a feature needed, they are able to contribute as well as I will actively be adding and completing 'issues' that are within the github repository to maintain the best practice and packages updated. I have also allocated set hours weekly to research and maintain best practice within the repository.",
+        "The solution that I taken for this is a solo developer approach. I have added an MIT license so that anyone that feels like there is a feature needed, they are able to contribute as well as I will actively be adding and completing 'issues' that are within the github repository to maintain the best practice and packages updated. I have also allocated set hours weekly to research and maintain best practice within the repository.",
     },
     {
       title: "Jpg.Store",

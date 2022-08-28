@@ -15,9 +15,8 @@
     gap: 6rem;
   }
 
-  @include lg-screen {
+  @include xl-screen {
     grid-template-columns: repeat(auto-fill, 800px);
-    gap: 8rem;
   }
   h2 {
     font-weight: 700;
@@ -33,7 +32,11 @@
   .career {
     p {
       margin: 1rem 0;
-      line-height: 1.5rem;
+      line-height: 2rem;
+
+      @include lg-screen {
+        width: 80%;
+      }
     }
   }
 
